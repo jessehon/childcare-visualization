@@ -1,0 +1,87 @@
+SA3_code_2011,SA3_name_2011,FY,Servicetype,child_age,child_count,service_count,fee_hr_mean,fee_hr_std
+11801,Eastern Suburbs - North,FY201516,LDC,9: Total,"5,950",70,$13.60 ,$2.05 
+12104,North Sydney - Mosman,FY201516,LDC,9: Total,"4,550",43,$13.40 ,$1.65 
+12201,Manly,FY201516,LDC,9: Total,"2,050",19,$12.85 ,$1.35 
+12103,Ku-ring-gai,FY201516,LDC,9: Total,"3,870",41,$12.70 ,$1.30 
+11703,Sydney Inner City,FY201516,LDC,9: Total,"8,960",96,$12.55 ,$2.10 
+12002,Leichhardt,FY201516,LDC,9: Total,"3,330",30,$12.50 ,$2.30 
+12101,Chatswood - Lane Cove,FY201516,LDC,9: Total,"5,590",52,$12.10 ,$1.65 
+11802,Eastern Suburbs - South,FY201516,LDC,9: Total,"5,310",58,$11.85 ,$2.15 
+20606,Stonnington - West,FY201516,LDC,9: Total,"1,980",16,$11.85 ,$1.90 
+20801,Bayside,FY201516,LDC,9: Total,"3,420",23,$11.70 ,$2.05 
+20802,Glen Eira,FY201516,LDC,9: Total,"7,700",51,$11.30 ,$2.10 
+20901,Banyule,FY201516,LDC,9: Total,"3,800",23,$11.30 ,$9.10 
+20604,Melbourne City,FY201516,LDC,9: Total,"6,660",43,$11.25 ,$1.95 
+20701,Boroondara,FY201516,LDC,9: Total,"4,750",33,$11.25 ,$1.95 
+20804,Stonnington - East,FY201516,LDC,9: Total,"1,060",8,$10.95 ,$1.00 
+20605,Port Phillip,FY201516,LDC,9: Total,"4,490",33,$10.90 ,$1.70 
+11702,Marrickville - Sydenham - Petersham,FY201516,LDC,9: Total,"2,200",19,$10.75 ,$0.95 
+12203,Warringah,FY201516,LDC,9: Total,"7,390",67,$10.70 ,$1.30 
+20607,Yarra,FY201516,LDC,9: Total,"4,180",33,$10.70 ,$1.10 
+12001,Canada Bay,FY201516,LDC,9: Total,"4,240",38,$10.55 ,$1.10 
+12602,Ryde - Hunters Hill,FY201516,LDC,9: Total,"6,860",57,$10.55 ,$1.40 
+12601,Pennant Hills - Epping,FY201516,LDC,9: Total,"1,800",18,$10.50 ,$1.35 
+12003,Strathfield - Burwood - Ashfield,FY201516,LDC,9: Total,"5,270",60,$10.35 ,$1.80 
+12202,Pittwater,FY201516,LDC,9: Total,"2,640",23,$10.30 ,$0.50 
+20703,Whitehorse - West,FY201516,LDC,9: Total,"3,500",22,$10.10 ,$0.90 
+20602,Darebin - South,FY201516,LDC,9: Total,"2,100",15,$9.95 ,$0.55 
+20603,Essendon,FY201516,LDC,9: Total,"3,310",16,$9.90 ,$0.85 
+21303,Maribyrnong,FY201516,LDC,9: Total,"2,900",19,$9.90 ,$0.90 
+11501,Baulkham Hills,FY201516,LDC,9: Total,"8,220",74,$9.85 ,$2.35 
+12102,Hornsby,FY201516,LDC,9: Total,"3,670",41,$9.80 ,$0.90 
+11701,Botany,FY201516,LDC,9: Total,"1,990",18,$9.75 ,$0.90 
+21003,Moreland - North,FY201516,LDC,9: Total,"2,080",15,$9.70 ,$1.30 
+12801,Cronulla - Miranda - Caringbah,FY201516,LDC,9: Total,"5,310",57,$9.65 ,$1.00 
+20702,Manningham - West,FY201516,LDC,9: Total,"2,910",25,$9.65 ,$0.85 
+21302,Hobsons Bay,FY201516,LDC,9: Total,"2,820",18,$9.65 ,$0.75 
+20803,Kingston,FY201516,LDC,9: Total,"5,290",33,$9.60 ,$1.15 
+21205,Monash,FY201516,LDC,9: Total,"6,060",42,$9.60 ,$0.85 
+20601,Brunswick - Coburg,FY201516,LDC,9: Total,"3,880",26,$9.55 ,$0.60 
+21104,Whitehorse - East,FY201516,LDC,9: Total,"2,000",14,$9.55 ,$0.90 
+12502,Carlingford,FY201516,LDC,9: Total,"2,570",26,$9.45 ,$1.05 
+11502,Dural - Wisemans Ferry,FY201516,LDC,9: Total,"1,300",14,$9.30 ,$1.40 
+11903,Hurstville,FY201516,LDC,9: Total,"5,030",55,$9.30 ,$0.95 
+20903,Nillumbik - Kinglake,FY201516,LDC,9: Total,"3,080",18,$9.25 ,$1.90 
+21101,Knox,FY201516,LDC,9: Total,"5,400",41,$9.25 ,$1.40 
+20902,Darebin - North,FY201516,LDC,9: Total,"3,370",22,$9.20 ,$0.85 
+11904,Kogarah - Rockdale,FY201516,LDC,9: Total,"4,900",60,$8.90 ,$0.90 
+12802,Sutherland - Menai - Heathcote,FY201516,LDC,9: Total,"5,210",54,$8.90 ,$0.90 
+21305,Wyndham,FY201516,LDC,9: Total,"10,220",56,$8.80 ,$0.85 
+21102,Manningham - East,FY201516,LDC,9: Total,580,     <5,$8.75 ,$0.45 
+11504,Rouse Hill - McGraths Hill,FY201516,LDC,9: Total,"3,230",21,$8.70 ,$0.90 
+12504,Parramatta,FY201516,LDC,9: Total,"7,580",74,$8.65 ,$1.05 
+11602,Blacktown - North,FY201516,LDC,9: Total,"4,140",36,$8.60 ,$0.80 
+21103,Maroondah,FY201516,LDC,9: Total,"4,660",30,$8.55 ,$0.50 
+21401,Frankston,FY201516,LDC,9: Total,"5,320",36,$8.55 ,$0.70 
+21001,Keilor,FY201516,LDC,9: Total,"1,930",11,$8.50 ,$0.65 
+12501,Auburn,FY201516,LDC,9: Total,"2,440",25,$8.45 ,$1.15 
+21105,Yarra Ranges,FY201516,LDC,9: Total,"4,310",30,$8.35 ,$0.80 
+12401,Blue Mountains,FY201516,LDC,9: Total,"2,260",21,$8.30 ,$0.95 
+20904,Whittlesea - Wallan,FY201516,LDC,9: Total,"7,650",41,$8.30 ,$0.70 
+21002,Macedon Ranges,FY201516,LDC,9: Total,"1,270",7,$8.30 ,$0.25 
+21005,Tullamarine - Broadmeadows,FY201516,LDC,9: Total,"5,140",32,$8.30 ,$0.55 
+10201,Gosford,FY201516,LDC,9: Total,"8,350",70,$8.25 ,$0.85 
+11503,Hawkesbury,FY201516,LDC,9: Total,690,6,$8.25 ,$0.45 
+11902,Canterbury,FY201516,LDC,9: Total,"5,810",65,$8.25 ,$0.85 
+11901,Bankstown,FY201516,LDC,9: Total,"7,980",88,$8.20 ,$1.05 
+21402,Mornington Peninsula,FY201516,LDC,9: Total,"4,920",34,$8.20 ,$1.00 
+21004,Sunbury,FY201516,LDC,9: Total,"1,570",8,$8.15 ,$0.55 
+10202,Wyong,FY201516,LDC,9: Total,"7,460",56,$8.05 ,$0.70 
+12403,Penrith,FY201516,LDC,9: Total,"8,820",65,$8.05 ,$0.85 
+21202,Casey - North,FY201516,LDC,9: Total,"4,480",32,$8.05 ,$0.70 
+21304,Melton - Bacchus Marsh,FY201516,LDC,9: Total,"6,200",37,$8.00 ,$0.55 
+11601,Blacktown,FY201516,LDC,9: Total,"6,060",63,$7.95 ,$0.90 
+12301,Camden,FY201516,LDC,9: Total,"4,400",28,$7.95 ,$0.80 
+21201,Cardinia,FY201516,LDC,9: Total,"5,000",25,$7.95 ,$0.95 
+21204,Dandenong,FY201516,LDC,9: Total,"3,770",37,$7.95 ,$1.00 
+21301,Brimbank,FY201516,LDC,9: Total,"6,200",42,$7.90 ,$0.65 
+12404,Richmond - Windsor,FY201516,LDC,9: Total,"2,030",22,$7.85 ,$1.15 
+12503,Merrylands - Guildford,FY201516,LDC,9: Total,"7,390",84,$7.80 ,$0.90 
+21203,Casey - South,FY201516,LDC,9: Total,"7,020",44,$7.75 ,$0.60 
+12405,St Marys,FY201516,LDC,9: Total,"2,110",20,$7.65 ,$0.70 
+12702,Fairfield,FY201516,LDC,9: Total,"6,950",69,$7.65 ,$0.90 
+11603,Mount Druitt,FY201516,LDC,9: Total,"4,990",43,$7.50 ,$0.80 
+12703,Liverpool,FY201516,LDC,9: Total,"5,790",56,$7.50 ,$1.10 
+12302,Campbelltown (NSW),FY201516,LDC,9: Total,"8,270",75,$7.25 ,$0.60 
+12701,Bringelly - Green Valley,FY201516,LDC,9: Total,"6,210",54,$7.20 ,$1.10 
+12303,Wollondilly,FY201516,LDC,9: Total,"2,620",19,$6.90 ,$0.70 

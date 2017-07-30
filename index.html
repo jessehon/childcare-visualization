@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Future Child</title>
+        <link rel="stylesheet" href="normalize.css">
+		<link href='//fonts.googleapis.com/css?family=Lato:300,300italic|Inconsolata|Raleway:400,400i' rel='stylesheet' type='text/css'>
+
+		<style>
+
+			::selection {
+			  color: #343434;
+			  background: #eee;
+			}
+
+            html {
+                border-top: 5px solid #343434;
+            }
+
+		    html, body {
+		  	  margin: 0;
+		  	  padding: 0;
+		    }
+
+		    body {
+		  	  color: #343434;
+		  	  font-family: "Lato", sans-serif;
+		  	  /*background: #e74c3c;*/
+              /*background: rgba(231,76,60,0.1);*/
+              background: oldlace;
+		    }
+
+		    header {
+		  	  background: oldlace;
+              /*background: rgba(217,72,57,0.1);*/
+		  	  margin: 0;
+		  	  padding: 0;
+              padding-top: 4em;
+              /*border-bottom: 2px solid rgba(217,72,57,0.1);*/
+              border-bottom: 1px solid #666;
+              margin: auto;
+              max-width: 500px;
+              width: 80%;
+		    }
+
+            @media (max-width: 640px) {
+              header {
+                padding-top: 3em;
+              }
+            }
+
+		    h1 {
+		  	  text-align: center;
+		  	  font-size: 80px;
+		  	  font-weight: 300;
+					font-family: Raleway;
+		  	  margin: 0;
+		    }
+
+            @media (max-width: 640px) {
+              h1 {
+                font-size: 50px;
+              }
+            }
+
+		    h2 {
+		  	  font-size: 22px;
+		  	  text-align: center;
+		  	  font-style: italic;
+					font-family: Raleway;
+		  	  font-weight: 300;
+		  	  padding: 1em;
+		  	  margin: 0;
+		    }
+
+		    section {
+		  	  margin-top: 20px;
+		  	  margin-bottom: 20px;
+		    }
+
+		    section > h2 {
+		  	  font-size: 20px;
+		  	  /*background: #d94839;*/
+              background: rgba(217,72,57,0);
+		  	  margin-bottom: 20px;
+		    }
+
+		    figure {
+		      opacity: 0;
+		  	  /*border-bottom: 2px solid rgba(217,72,57,0.1);*/
+              border-bottom: 1px solid rgba(0,0,0,0.1);
+		  	  max-width: 500px;
+		  	  margin: auto;
+		  	  padding: 20px 20px 20px 20px;
+		    }
+
+		    section > figure:last-child {
+		      border-bottom: 0px;
+		    }
+
+		    code {
+		  	  font-family: "Inconsolata", monospace;
+		  	  font-size: 14px;
+              /*border-bottom: 1px solid rgba(217,72,57,0.1);*/
+              /*border-bottom: 1px solid rgba(0,0,0,0.1);*/
+		    }
+
+		    pre {
+              margin: 10px 10px 10px 10px;
+              display: inline-block;
+              vertical-align: top;
+		  	  text-align: left;
+              /*background: rgba(255,255,255,0.3);*/
+		    }
+
+            .lines {
+            }
+
+		    .box {
+              margin: 10px 10px 10px 10px;
+              display: inline-block;
+		    }
+
+            .map {
+                fill: none;
+                stroke: white;
+                stroke-width: 1px;
+            }
+
+						#map-2 {
+								fill: none;
+								stroke: #343434;
+								stroke-width: 1px;
+						}
+
+						.hidden {
+        display: none;
+    }
+    div.tooltip {
+        color: #222;
+        background-color: #fff;
+        padding: .5em;
+        text-shadow: #f5f5f5 0 1px 0;
+        border-radius: 2px;
+        opacity: 0.9;
+        position: absolute;
+    }
+
+						#map-3 {
+								fill: none;
+								stroke: #343434;
+								stroke-width: 1px;
+						}
+
+						#map-4 {
+								fill: none;
+								stroke: #343434;
+								stroke-width: 1px;
+						}
+
+            .map {
+                width: 100%;
+            }
+
+            .prov {
+                stroke: oldlace;
+                stroke-width: 2px;
+            }
+
+						.prov2 {
+                stroke: #343434;
+                stroke-width: 2px;
+            }
+
+            .map-section {
+               /*opacity: 0;*/
+               margin: auto;
+               margin-top: 0;
+               margin-bottom: 2em;
+               max-width: 660px;
+               min-height: 500px;
+            }
+
+            @media (max-width: 640px) {
+                .map-section {
+                   min-height: 250px;
+                }
+            }
+
+            .subtitle {
+                /*opacity: 0;*/
+            }
+
+            @media (max-width: 640px) {
+                .subtitle {
+                    font-size: 18px;
+                }
+            }
+
+            .github {
+                /*opacity: 0;*/
+                margin: auto;
+                /*max-width: 210px;*/
+                max-width: 120px;
+            }
+
+            .github span {
+                padding: 0px 10px 0px 0px;
+            }
+
+            .github a {
+                color: firebrick;
+            }
+
+            .github a:hover {
+                color: darkorange;
+            }
+            .github iframe {
+                position: relative;
+                top: 4px;
+            }
+
+            .custom, .getting-started {
+                margin-top: 5em;
+                margin-bottom: 0;
+                padding: 3em 0em 6em 0em;
+                background: #343434;
+                color: darkorange;
+                text-align: center;
+                font-size: 17px;
+            }
+
+            .custom h2, .getting-started h2 {
+                font-size: 30px;
+            }
+
+            .getting-started h2 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            .getting-started h3 {
+                margin-top: 0.5em;
+                margin-bottom: 2em;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+
+            @media (max-width: 640px) {
+              .custom h2, .getting-started h2 {
+                font-size: 25px;
+              }
+            }
+
+            .getting-started code {
+                border-bottom: 0;
+            }
+
+            #example {
+                margin-bottom: 1em;
+            }
+
+            .circles h2, .lines h2, .paths h2 {
+                margin-top: 2em;
+                font-size: 30px;
+            }
+
+            .categories {
+                background: firebrick;
+                text-align: center;
+            }
+
+            #categories {
+                padding-top: 1em;
+                padding-bottom: 4em;
+                max-width: 600px;
+                width: 90%;
+                margin: auto;
+            }
+
+            .categories h2 {
+                padding-top: 2em;
+                color: oldlace;
+                font-size: 30px;
+            }
+
+            .usa h2 {
+                padding-top: 2em;
+                color: #343434;
+                font-size: 30px;
+            }
+
+            @media (max-width: 640px) {
+                .categories h2 {
+                    font-size: 20px;
+                }
+                .usa h2 {
+                    font-size: 20px;
+                }
+            }
+
+            footer {
+                text-align: center;
+                background: darkorange;
+                color: #343434;
+                font-size: 12px;
+                padding-bottom: 0px;
+            }
+
+            #legend {
+                padding-top: 10px;
+                margin-bottom: 2em;
+            }
+
+
+            .usa {
+                background: darkorange;
+                text-align: center;
+            }
+
+
+        </style>
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Future Child</h1>
+			<h2>An analysis of child care in Australia #govhack17 #datavis</h2>
+		</header>
+
+        <section class="map-section map-1">
+        </section>
+
+        <p style="text-align:center;">Data sourced from <br>Department of Education and Training (Child Care Administrative Data),<br>
+				Australian Bureau of Statistics (SA3 Regions and Census 2016 Data).</p>
+
+        <section class="getting-started">
+          <h2>Affordability in Major Regions</h2>
+					<h3>Child care affordability is measured in the average price that is <br>
+						paid in each region for an hour of childcare.</h3>
+						<h3> This can range from <b style="font-size:24px;">$6</b> to <b style="font-size:24px;">$18</b>.
+          <h3>The highest priced regions in the country cluster<br>
+					around Sydney inner suburbs like Leichhardt, Eastern Suburbs, Mosman,<br>
+				  and Ku-ring-gai.</h3>
+
+					<p id="syd">-</p>
+					<div class="map-section map-2"></div>
+					<h3>Melbourne's greater affordability for childcare in comparison to<br>
+					Sydney is shown below.</h3>
+					<p id="melb">-</p>
+					<div class="map-section map-4"></div>
+					<h3>However Melbourne's affordability may be changing with Melbourne<br>
+					suburbs increasing in price at the fastest rate over the last two financial years.</h3>
+					<style>
+					.chart div {
+  background-color: darkorange;
+  text-align: right;
+  padding: 3px;
+  margin: 4px;
+  color: #343434;
+}
+
+</style>
+<div class="chart" style="display:table; margin:0 auto;" >
+  <div style="width: 420px;">Melbourne City</div>
+  <div style="width: 400px;">Moreland - North</div>
+  <div style="width: 360px;">Marrickville - Sydenham - Petersham</div>
+  <div style="width: 360px;">Stonnington - West</div>
+  <div style="width: 360px;">Banyule</div>
+  <div style="width: 340px;">Manly</div>
+	<div style="width: 340px;">Keilor</div>
+</div>
+
+        </section>
+
+		<section class="lines">
+
+			<h2>
+					A path forward
+			</h2>
+			<h3 style="text-align:center;">Fundamental demographic shifts are going to continue<br>
+				to make child care challenging in the future.</h3>
+			<h3 style="text-align:center;">One of the most stressful questions a new parent confronts is,<br>
+				"Who's going to take care of my baby when I go back to work?"</h3>
+
+
+<br><br><br>
+		</section>
+
+
+	</body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="d3.min.js" charset="utf-8"></script>
+  <script src="topojson.js" charset="utf-8"></script>
+  <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+  <!--<script src="http://d3js.org/topojson.v1.min.js"></script>-->
+  <script src="textures.min.js" charset="utf-8"></script>
+	<script src="map.js"></script>
+	<script src="map-price.js"></script>
+	<script src="map-melb.js"></script>
+  <script>
+
+    var box = function(id, t) {
+      var figure = d3.select("[data="+id+"]");
+      var box = figure.select(".box");
+      var svg = box.append("svg")
+        .attr('width', 140)
+        .attr('height', 140);
+      svg.call(t);
+      svg.append("path")
+          .attr("d", "M 0 0 L 0 140 L 140 140 L 140 0 Z")
+          .style({
+            "fill": t.url()
+          });
+      figure.transition().duration(1000).style("opacity",1);
+    }
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines();
+    box("box1",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .heavier();
+    box("box2",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .lighter();
+    box("box3",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .thicker();
+    box("box3_1",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .thinner();
+    box("box3_2",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .heavier(10)
+        .thinner(1.5);
+    box("box4",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .size(4)
+        .strokeWidth(1);
+    box("box5",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .size(8)
+        .strokeWidth(2);
+    box("box6",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .orientation("vertical")
+        .strokeWidth(1)
+        .shapeRendering("crispEdges");
+    box("box7",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .orientation("3/8")
+        .stroke("darkorange");
+    box("box8",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .orientation("3/8", "7/8")
+        .stroke("darkorange");
+    box("box9",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .size(4)
+        .orientation("vertical", "horizontal")
+        .strokeWidth(1)
+        .shapeRendering("crispEdges")
+        .stroke("darkorange");
+    box("box10",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.lines()
+        .orientation("diagonal")
+        .size(40)
+        .strokeWidth(26)
+        .stroke("firebrick")
+        .background("darkorange");
+    box("box11",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles();
+    box("box12",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .heavier();
+    box("box12_1",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .lighter();
+    box("box12_2",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .thicker();
+    box("box12_3",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .thinner();
+    box("box12_4",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .size(5);
+    box("box13",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .complement();
+    box("box14",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .radius(4);
+    box("box15",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .radius(4)
+        .fill("transparent")
+        .strokeWidth(2);
+    box("box16",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .radius(4)
+        .fill("darkorange")
+        .strokeWidth(2)
+        .stroke("firebrick")
+        .complement();
+    box("box17",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.circles()
+        .size(10)
+        .radius(2)
+        .fill("firebrick")
+        .background("darkorange");
+    box("box18",t);
+
+    var t = textures.paths()
+        .d("hexagons")
+        .size(8)
+        .strokeWidth(2)
+        .stroke("darkorange");
+    box("box22",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.paths()
+        .d("crosses")
+        .lighter()
+        .thicker();
+    box("box23",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.paths()
+        .d("caps")
+        .lighter()
+        .thicker()
+        .stroke("darkorange");
+    box("box24",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.paths()
+        .d("woven")
+        .lighter()
+        .thicker();
+    box("box25",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.paths()
+        .d("waves")
+        .thicker()
+        .stroke("firebrick");
+    box("box26",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.paths()
+        .d("nylon")
+        .lighter()
+        .shapeRendering("crispEdges");
+    box("box27",t);
+
+    // -----------------------------------------------------------------
+
+    var t = textures.paths()
+        .d("squares")
+        .stroke("darkorange");
+    box("box28",t);
+
+  </script>
+
+  <script>
+    var w = 150,
+        h = 150;
+    var svg = d3.select("#example")
+        .append("svg")
+        .attr("width",w)
+        .attr("height", h);
+    var t = textures.lines()
+        .stroke("darkorange")
+        .thicker();
+    svg.call(t);
+    svg.append("circle")
+        .attr({
+            "cx": w/2,
+            "cy": h/2,
+            "r": 60
+        })
+        .style({
+            "fill": t.url(),
+            "stroke": "darkorange",
+            "stroke-width": 2
+        });
+
+  </script>
+
+
+
+
+</html>
